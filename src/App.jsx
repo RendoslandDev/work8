@@ -1,6 +1,9 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { CiGlobe } from "react-icons/ci";
+import { MdMarkEmailRead } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 // import './App.css'
 
 import Button from './button'
@@ -76,22 +79,24 @@ function App() {
           <p className=' flex justify-center xl:justify-self-start'>these details</p>
           <ul role='list' className='flex  flex-col justify-center  mt-5 '>
             <li className="group/item hover:bg-slate-100 ... flex mb-5">
-         <i className="fa-solid fa-phone h-10 w-10 rounded border border-black-400 bg-black grid place-items-center text-white"></i>
+         <i className="text-3xl h-10 w-10 rounded border border-black-400 bg-black grid place-items-center text-white">
+            <FaPhoneAlt />
+         </i>
 
       <div className='px-2'>
-        <a href="{person.url}">Email</a>
+        <a href="{person.url}">Phone</a>
         <p>0558471039</p>
       </div>
       </li>
       <li className="group/item hover:bg-slate-100 ... flex mb-5">
-      <i class="fa-solid fa-envelope-circle-check h-10 w-10 text-white bg-black rounded grid place-items-center"></i>
+      <i class="h-10 w-10 text-white bg-black rounded grid place-items-center text-3xl"><MdMarkEmailRead /></i>
       <div className='px-2'>
         <a href="{person.url}">Email</a>
         <p>charlesowusu@gmail.com</p>
       </div>
       </li>
       <li className="group/item hover:bg-slate-100 ... flex ">
-     <i class="fa-solid fa-globe border border-black w-10 grid place-items-center rounded h-10 text-white bg-black"></i> 
+     <i class=" border border-black w-10 grid place-items-center rounded h-10 text-white bg-black text-3xl" ><CiGlobe /></i> 
      <div className='px-2'>
         <a href="{person.url}">Website</a>
         <p>www.webdev.com.pvd</p>
